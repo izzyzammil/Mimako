@@ -1,0 +1,94 @@
+@font-face {
+  font-family: "Nunito";
+  src: url("assets/font/Nunito-Regular.ttf");
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "Nunito", sans-serif;
+}
+
+.image-bg-petunjuk {
+  background-color: white;
+  width: 1020px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-image: url("assets/icons/bg-dashboard.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+.headers {
+  height: 75px;
+  width: 1020px;
+  position: relative;
+  background-color: #000066;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+  justify-content: space-between;
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  padding: 0 50px;
+  box-sizing: border-box;
+}
+
+.headers a {
+  text-decoration: none;
+}
+
+.headers .item-header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.item-header p {
+  color: white;
+  font-size: 24px;
+  padding-left: 10px;
+  font-weight: 700;
+}
+
+.container {
+  padding: 0 40px 0px 40px;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  width: 1020px;
+  box-sizing: border-box;
+  color: #212129;
+  font-size: 14px;
+  font-weight: 400;
+  align-items: center;
+}
+
+.container h2 {
+  padding: 32px 0 16px 0;
+  font-size: 24px;
+}
+
+.container .bg-petunjuk {
+  z-index: 2;
+  background-image: url("assets/icons/bg-petunjuk.png");
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 526px;
+  color: white;
+  text-align: justify;
+}
+
+.bg-petunjuk .teks-petunjuk {
+  padding: 120px 55px 0px 55px;
+}
+
+.bg-petunjuk ol {
+  padding-left: 26px;
+  padding-top: 16px;
+}

@@ -1,0 +1,201 @@
+@font-face {
+  font-family: "Nunito";
+  src: url("assets/font/Nunito-Regular.ttf");
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "Nunito", sans-serif;
+}
+
+.image-bg-glosarium {
+  background-color: white;
+  width: 1020px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-image: url("assets/icons/bg-dashboard.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+.headers {
+  height: 75px;
+  width: 1020px;
+  position: relative;
+  background-color: #000066;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+  justify-content: space-between;
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  padding: 0 50px;
+  box-sizing: border-box;
+}
+
+.headers a {
+  text-decoration: none;
+}
+
+.headers .item-header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.item-header p {
+  color: white;
+  font-size: 24px;
+  padding-left: 10px;
+  font-weight: 700;
+}
+
+.container {
+  padding: 0 35px 26px 35px;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  width: 1020px;
+  box-sizing: border-box;
+  color: #212129;
+  font-size: 14px;
+  font-weight: 400;
+  align-items: center;
+}
+
+.container h2 {
+  padding: 28px 0 22px 0;
+  font-size: 24px;
+}
+
+.container .main-content {
+  display: flex;
+  flex-direction: row;
+}
+
+.container .left-content {
+  background-color: #000066;
+  width: 260px;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+
+.item-left-content1,
+.item-left-content2,
+.item-left-content3,
+.item-left-content4,
+.item-left-content5,
+.item-left-content6,
+.item-left-content7,
+.item-left-content8,
+.item-left-content9,
+.item-left-content10 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.item-left-content1 {
+  margin: 20px 0 135px 20px;
+}
+
+.item-left-content2 {
+  margin: 20px 0 115px 20px;
+}
+
+.item-left-content3 {
+  margin: 20px 0 354px 20px;
+}
+
+.item-left-content4 {
+  margin: 20px 0 136px 20px;
+}
+
+.item-left-content5 {
+  margin: 20px 0 74px 20px;
+}
+
+.item-left-content6 {
+  margin: 20px 0 138px 20px;
+}
+
+.item-left-content7 {
+  margin: 20px 0 98px 20px;
+}
+
+.item-left-content8 {
+  margin: 20px 0 448px 20px;
+}
+
+.item-left-content9 {
+  margin: 20px 0 116px 20px;
+}
+
+.item-left-content10 {
+  margin: 20px 0 0 20px;
+}
+
+.left-content p {
+  color: white;
+  font-weight: 700;
+  font-size: 17px;
+  margin-right: 10px;
+}
+
+.divider {
+  background-color: white;
+  height: 3px;
+  width: 170px;
+  border-radius: 3px;
+}
+
+.container .right-content {
+  box-sizing: border-box;
+  background-color: rgba(255, 255, 255, 0.5);
+  width: 660px;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  padding: 20px 20px 0 20px;
+  text-align: justify;
+}
+
+.right-content h3 {
+  margin-bottom: 10px;
+}
+
+.right-content p {
+  margin-bottom: 10px;
+}
+
+.button {
+  display: flex;
+  font-size: 16px;
+  font-weight: 600;
+  position: relative;
+  left: 368px;
+}
+
+.tombol-lanjut {
+  background: white;
+  border: none;
+  border-radius: 100px;
+  padding: 4px 16px;
+  box-shadow: 5px 4px 10px rgba(0, 0, 0, 0.25);
+}
+
+.button a {
+  text-decoration: none;
+  color: #212129;
+  display: flex;
+  align-items: center;
+}
+
+.button img {
+  height: 30px;
+  margin-left: 8px;
+}

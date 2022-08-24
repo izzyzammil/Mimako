@@ -1,0 +1,153 @@
+@font-face {
+  font-family: "Nunito";
+  src: url("assets/font/Nunito-Regular.ttf");
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "Nunito", sans-serif;
+}
+
+.image-bg-materi {
+  background-color: white;
+  width: 1020px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-image: url("assets/icons/bg-dashboard.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+.headers {
+  height: 75px;
+  width: 1020px;
+  position: relative;
+  background-color: #000066;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+  justify-content: space-between;
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  padding: 0 50px;
+  box-sizing: border-box;
+}
+
+.headers a {
+  text-decoration: none;
+}
+
+.headers .item-header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.item-header p {
+  color: white;
+  font-size: 24px;
+  padding-left: 10px;
+  font-weight: 700;
+}
+
+.container {
+  padding: 0px 45px 0px 45px;
+  display: flex;
+  flex-direction: column;
+  width: 1020px;
+  height: 582px;
+  box-sizing: border-box;
+}
+
+.judul-bab {
+  display: flex;
+  justify-content: center;
+  height: 180px;
+  margin-top: 30px;
+}
+
+.judul-bab img {
+  position: absolute;
+  height: 180px;
+  -webkit-transition: opacity 0.5s ease-in-out;
+  transition: opacity 0.5s ease-in-out;
+}
+
+.judul-bab img.img-depan:hover {
+  opacity: 0;
+  cursor: pointer;
+}
+
+.sub-judul {
+  display: flex;
+  justify-content: space-evenly;
+  transform: translate(-76px, 0);
+}
+
+.permintaan-satu,
+.permintaan-tiga {
+  height: 140px;
+  margin-top: 70px;
+}
+
+.permintaan-dua {
+  height: 140px;
+  margin-top: 210px;
+}
+
+.permintaan-satu img {
+  transform: translate(-68px, 30px);
+}
+
+.permintaan-tiga img {
+  transform: translate(58px, 30px);
+}
+
+.permintaan-satu img,
+.permintaan-dua img,
+.permintaan-tiga img {
+  position: absolute;
+  height: 140px;
+  -webkit-transition: opacity 0.5s ease-in-out;
+  transition: opacity 0.5s ease-in-out;
+}
+
+.permintaan-satu img.img-depan:hover,
+.permintaan-dua img.img-depan:hover,
+.permintaan-tiga img.img-depan:hover {
+  opacity: 0;
+  cursor: pointer;
+}
+
+.arrows {
+  display: flex;
+}
+
+.arrow-satu img {
+  position: relative;
+  height: 80px;
+  transform: rotate(-10deg);
+  top: -370px;
+  left: 200px;
+}
+
+.arrow-dua img {
+  position: relative;
+  height: 80px;
+  transform: rotate(-95deg);
+  top: -370px;
+  left: 550px;
+}
+
+.arrow-tiga img {
+  position: relative;
+  height: 80px;
+  transform: rotate(-55deg);
+  top: -285px;
+  left: 218px;
+}

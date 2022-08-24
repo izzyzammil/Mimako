@@ -1,0 +1,115 @@
+@font-face {
+  font-family: "Nunito";
+  src: url("assets/font/Nunito-Regular.ttf");
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "Nunito", sans-serif;
+}
+
+.image-bg-evaluasi {
+  background-color: white;
+  height: 724px;
+  width: 1020px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-image: url("assets/icons/bg-evaluasi-belajar.png");
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.headers {
+  height: 75px;
+  width: 1020px;
+  position: relative;
+  background-color: #000066;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+  justify-content: space-between;
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  padding: 0 50px;
+  box-sizing: border-box;
+}
+
+.headers a {
+  text-decoration: none;
+}
+
+.headers .item-header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.item-header p {
+  color: white;
+  font-size: 24px;
+  padding-left: 10px;
+  font-weight: 700;
+}
+
+.container {
+  padding: 0 45px 0px 45px;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  width: 1020px;
+  box-sizing: border-box;
+  align-items: center;
+}
+
+.container h2 {
+  padding: 32px 0 28px 0;
+  font-size: 24px;
+  margin-bottom: 8px;
+}
+
+.container .main-content {
+  display: flex;
+  flex-direction: row;
+}
+
+.left-content {
+  display: flex;
+  flex-direction: column;
+  margin-right: 55px;
+}
+
+.msg-error p {
+  color: red;
+  font-style: italic;
+}
+
+.left-content input {
+  padding: 16px;
+  margin-bottom: 26px;
+  width: 380px;
+  border-style: none;
+  border-radius: 10px;
+  font-weight: 700;
+  font-size: 15px;
+  box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.15);
+}
+
+.left-content input::placeholder {
+  font-weight: 600;
+  font-style: italic;
+}
+
+.right-content {
+  margin-left: 55px;
+  cursor: pointer;
+}
+
+.right-content img {
+  height: 122px;
+  position: relative;
+  top: 50px;
+}

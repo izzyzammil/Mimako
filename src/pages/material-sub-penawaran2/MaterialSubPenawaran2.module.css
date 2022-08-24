@@ -1,0 +1,138 @@
+@font-face {
+  font-family: "Nunito";
+  src: url("assets/font/Nunito-Regular.ttf");
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "Nunito", sans-serif;
+}
+
+.image-bg-materi {
+  background-color: white;
+  width: 1020px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-image: url("assets/icons/bg-dashboard.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+.headers {
+  height: 75px;
+  width: 1020px;
+  position: relative;
+  background-color: #000066;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+  justify-content: space-between;
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  padding: 0 50px;
+  box-sizing: border-box;
+  z-index: 5;
+}
+
+.headers a {
+  text-decoration: none;
+}
+
+.headers .item-header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.item-header p {
+  color: white;
+  font-size: 24px;
+  padding-left: 10px;
+  font-weight: 700;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  width: 1020px;
+  height: 648px;
+  box-sizing: border-box;
+}
+
+.main-content {
+  display: flex;
+}
+
+.left-content {
+  flex: 1;
+}
+
+.img-frame {
+  position: relative;
+  height: 648px;
+}
+
+.right-content {
+  flex: 2.4;
+  padding: 16px 0px;
+  transform: translate(-16px, 0);
+  overflow-x: hidden;
+}
+
+.isi-materi {
+  height: 620px;
+  overflow: hidden;
+}
+
+.isi-materi h2 {
+  text-align: center;
+  margin-bottom: 16px;
+  margin-top: 26px;
+}
+
+.isi-materi .materi {
+  height: 85%;
+  overflow: auto;
+  margin: 15px -300px 0px 0px;
+  padding-right: 300px;
+  text-align: justify;
+}
+
+.button {
+  display: flex;
+  font-size: 14px;
+  font-weight: 600;
+  justify-content: right;
+  margin-bottom: 28px;
+  margin-top: 16px;
+  transform: translate(-12px, 0);
+}
+
+.tombol-paham {
+  background: white;
+  border: none;
+  border-radius: 100px;
+  padding: 4px 16px;
+  box-shadow: 5px 4px 10px rgba(0, 0, 0, 0.25);
+}
+
+.tombol-paham:hover {
+  background: #fce865;
+}
+
+.button a {
+  text-decoration: none;
+  color: #212129;
+  display: flex;
+  align-items: center;
+}
+
+.button img {
+  height: 28px;
+  margin-left: 8px;
+}

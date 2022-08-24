@@ -1,0 +1,235 @@
+@font-face {
+  font-family: "Nunito";
+  src: url("assets/font/Nunito-Regular.ttf");
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "Nunito", sans-serif;
+}
+
+.image-bg-evaluasi {
+  background-color: white;
+  width: 1020px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-image: url("assets/icons/bg-dashboard.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+.headers {
+  height: 75px;
+  width: 1020px;
+  position: relative;
+  background-color: #000066;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+  justify-content: space-between;
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  padding: 0 50px;
+  box-sizing: border-box;
+  z-index: 5;
+}
+
+.headers a {
+  text-decoration: none;
+}
+
+.headers .item-header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.item-header p {
+  color: white;
+  font-size: 24px;
+  padding-left: 10px;
+  font-weight: 700;
+}
+
+.container {
+  /* padding: 0px 45px 0px 45px; */
+  display: flex;
+  flex-direction: column;
+  width: 1020px;
+  /* height: 582px; */
+  box-sizing: border-box;
+}
+
+.container .papan-skor {
+  display: flex;
+  background-color: white;
+  height: 190px;
+  width: 1020px;
+  margin: 0 auto;
+  box-shadow: 0px 7px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 0px 0px 30px 30px;
+  transform: translate(0, -12px);
+}
+
+.left-content {
+  margin-right: 16px;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 38px;
+}
+
+.left-content p {
+  font-size: 16px;
+  margin-left: 150px;
+}
+
+.skor {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.skor .nilai-skor {
+  font-size: 50px;
+  font-weight: 700;
+}
+
+.skor .kkm {
+  font-size: 16px;
+  margin-left: 8px;
+}
+
+.hasil-lulus p {
+  font-size: 22px;
+  font-weight: 700;
+}
+
+.divider {
+  background-color: black;
+  height: 152px;
+  width: 4px;
+  margin: 26px 12px 16px 12px;
+  transform: translate(-32px, 0);
+}
+
+.right-content {
+  margin-left: 18px;
+  flex: 1;
+}
+
+.atribut-siswa {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding-top: 28px;
+}
+
+.avatar-siswa img {
+  height: 56px;
+  margin-right: 12px;
+}
+
+.identitas-siswa p {
+  font-weight: 700;
+  font-size: 18px;
+}
+
+.keterangan-soal {
+  margin-top: 12px;
+}
+
+.tombol-download img {
+  height: 30px;
+  position: relative;
+  left: 966px;
+  cursor: pointer;
+}
+
+.tabel-evaluasi {
+  display: flex;
+  justify-content: center;
+}
+
+.evaluasi {
+  border-collapse: collapse;
+  width: 94%;
+  margin-top: 8px;
+  font-size: 15px;
+  line-height: 23px;
+}
+
+.evaluasi,
+.evaluasi th,
+.evaluasi td {
+  padding: 4px 6px;
+}
+
+.evaluasi tr th {
+  background: #c5c5f7;
+}
+
+.evaluasi td:nth-child(1) {
+  text-align: center;
+}
+
+.button {
+  display: flex;
+  font-size: 14px;
+  font-weight: 600;
+  position: relative;
+  left: 276px;
+  margin-top: 16px;
+  margin-bottom: 16px;
+}
+
+.tombol-mengulang {
+  background: white;
+  border: none;
+  border-radius: 100px;
+  padding: 4px 16px;
+  margin-right: 12px;
+  box-shadow: 5px 4px 10px rgba(0, 0, 0, 0.25);
+}
+
+.tombol-mengulang:hover {
+  background-color: #fce865;
+}
+
+.tombol-selesai {
+  background: white;
+  border: none;
+  border-radius: 100px;
+  padding: 4px 16px;
+  margin-left: 12px;
+  box-shadow: 5px 4px 10px rgba(0, 0, 0, 0.25);
+}
+
+.tombol-selesai:hover {
+  background-color: #fce865;
+}
+
+.button a {
+  text-decoration: none;
+  color: #212129;
+  display: flex;
+  align-items: center;
+}
+
+.button img {
+  height: 28px;
+}
+
+.tombol-selesai img {
+  margin-left: 8px;
+}
+
+.tombol-mengulang img {
+  margin-right: 8px;
+}

@@ -1,0 +1,46 @@
+@font-face {
+  font-family: "Nunito";
+  src: url("assets/font/Nunito-Regular.ttf");
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "Nunito", sans-serif;
+}
+
+.image-bg {
+  background-color: white;
+  height: 724px;
+  width: 1020px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-image: url("assets/icons/loading_screen2.png");
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  /* transform: translate(0, -18px); */
+}
+
+.button {
+  font-size: 18px;
+  font-weight: bold;
+  transform: translate(0, 270px);
+}
+
+.tombol-lanjut {
+  background: #000066;
+  border: none;
+  border-radius: 100px;
+  padding: 10px 28px;
+}
+
+.button a {
+  text-decoration: none;
+  color: white;
+  display: flex;
+  align-items: center;
+}

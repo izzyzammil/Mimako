@@ -1,0 +1,134 @@
+@font-face {
+  font-family: "Nunito";
+  src: url("assets/font/Nunito-Regular.ttf");
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "Nunito", sans-serif;
+}
+
+.image-bg-dashboard {
+  background-color: white;
+  width: 1020px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-image: url("assets/icons/bg-menu-home.png");
+  /* background-position: center; */
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+.headers {
+  height: 75px;
+  width: 1020px;
+  position: relative;
+  background-color: #000066;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+  justify-content: space-between;
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  padding: 0 50px;
+  box-sizing: border-box;
+}
+
+.headers a {
+  text-decoration: none;
+}
+
+.headers .item-header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.item-header label {
+  color: white;
+  padding-left: 10px;
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.main-menu {
+  display: flex;
+  flex-direction: column;
+  width: 1020px;
+  overflow-x: hidden;
+}
+
+.upper-menu {
+  display: flex;
+  margin: 72px 0;
+  position: relative;
+  transform: translate(36%, 0);
+  height: 230px;
+}
+
+.upper-menu img {
+  position: absolute;
+  height: 230px;
+  -webkit-transition: opacity 0.5s ease-in-out;
+  transition: opacity 0.5s ease-in-out;
+}
+
+.upper-menu img.img-front:hover {
+  opacity: 0;
+  cursor: pointer;
+}
+
+.group-menu {
+  display: flex;
+  flex: 1;
+  flex-direction: row;
+  justify-content: space-evenly;
+  transform: translate(-5%, 0);
+}
+
+.menu-about,
+.menu-guide,
+.menu-glosarium,
+.menu-material,
+.menu-evaluation {
+  display: flex;
+  position: relative;
+  height: 120px;
+}
+
+.menu-about img,
+.menu-guide img,
+.menu-glosarium img,
+.menu-material img,
+.menu-evaluation img {
+  position: absolute;
+  height: 120px;
+  -webkit-transition: opacity 0.5s ease-in-out;
+  transition: opacity 0.5s ease-in-out;
+}
+
+.menu-about img.img-front:hover,
+.menu-guide img.img-front:hover,
+.menu-glosarium img.img-front:hover,
+.menu-material img.img-front:hover,
+.menu-evaluation img.img-front:hover {
+  opacity: 0;
+  cursor: pointer;
+}
+
+.menu-about img {
+  transform: translate(0, -2px);
+}
+
+.menu-guide img {
+  transform: translate(-16px, 0);
+}
+
+.cloud {
+  width: 1020px;
+  transform: translateY(6px);
+}

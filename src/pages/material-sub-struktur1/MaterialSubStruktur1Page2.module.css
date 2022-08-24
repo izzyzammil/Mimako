@@ -1,0 +1,125 @@
+@font-face {
+  font-family: "Nunito";
+  src: url("assets/font/Nunito-Regular.ttf");
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "Nunito", sans-serif;
+}
+
+.image-bg-materi {
+  background-color: white;
+  width: 1020px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-image: url("assets/icons/bg-dashboard.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+.headers {
+  height: 75px;
+  width: 1020px;
+  position: relative;
+  background-color: #000066;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+  justify-content: space-between;
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  padding: 0 50px;
+  box-sizing: border-box;
+  z-index: 5;
+}
+
+.headers a {
+  text-decoration: none;
+}
+
+.headers .item-header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.item-header p {
+  color: white;
+  font-size: 24px;
+  padding-left: 10px;
+  font-weight: 700;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  width: 1020px;
+  box-sizing: border-box;
+}
+
+.img-bagan {
+  display: flex;
+  justify-content: center;
+}
+
+.img-bagan img {
+  margin-top: 52px;
+  height: 500px;
+}
+
+.button {
+  display: flex;
+  font-size: 14px;
+  font-weight: 600;
+  justify-content: right;
+  margin-top: 38px;
+  transform: translate(-36px, 0);
+}
+
+.tombol-next {
+  background: white;
+  border: none;
+  border-radius: 100px;
+  padding: 4px 16px;
+  box-shadow: 5px 4px 10px rgba(0, 0, 0, 0.25);
+}
+
+.tombol-next img {
+  height: 28px;
+  margin-left: 4px;
+}
+
+.tombol-back {
+  background: white;
+  border: none;
+  border-radius: 100px;
+  padding: 4px 16px;
+  box-shadow: 5px 4px 10px rgba(0, 0, 0, 0.25);
+  margin-right: 12px;
+}
+
+.tombol-back img {
+  height: 28px;
+  margin-right: 4px;
+}
+
+.tombol-next:hover {
+  background: #fce865;
+}
+
+.tombol-back:hover {
+  background: #fce865;
+}
+
+.button a {
+  text-decoration: none;
+  color: #212129;
+  display: flex;
+  align-items: center;
+}

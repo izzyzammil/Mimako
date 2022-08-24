@@ -1,0 +1,176 @@
+@font-face {
+  font-family: "Nunito";
+  src: url("assets/font/Nunito-Regular.ttf");
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "Nunito", sans-serif;
+}
+
+.image-bg-tentang {
+  background-color: white;
+  width: 1020px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-image: url("assets/icons/bg-dashboard.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+.headers {
+  width: 1020px;
+  height: 75px;
+  position: relative;
+  background-color: #000066;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+  justify-content: space-between;
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  padding: 0 50px;
+  box-sizing: border-box;
+}
+
+.headers a {
+  text-decoration: none;
+}
+
+.headers .item-header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.item-header p {
+  color: white;
+  font-size: 24px;
+  padding-left: 10px;
+  font-weight: 700;
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+  flex: 1;
+  width: 1020px;
+  box-sizing: border-box;
+  color: #212129;
+  font-size: 15px;
+  line-height: 23px;
+  font-weight: 400;
+  text-align: justify;
+  padding: 20px;
+}
+
+.left-content {
+  display: flex;
+  flex: 1.2;
+  flex-direction: column;
+  margin-right: 24px;
+}
+
+.left-content img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 12px auto 30px auto;
+}
+
+.right-content {
+  display: flex;
+  flex: 2.2;
+  margin-left: 24px;
+  flex-direction: column;
+}
+
+.right-content h2 {
+  margin-bottom: 16px;
+  font-weight: 700;
+  font-size: 30px;
+}
+
+.right-content ol {
+  padding-left: 26px;
+  margin-bottom: 60px;
+}
+
+.button {
+  display: flex;
+  font-size: 16px;
+  font-weight: 600;
+  position: relative;
+  left: 400px;
+}
+
+.tombol-selesai {
+  background: white;
+  border: none;
+  border-radius: 100px;
+  padding: 4px 16px;
+  margin-left: 12px;
+}
+
+.button a {
+  text-decoration: none;
+  color: #212129;
+  display: flex;
+  align-items: center;
+}
+
+.button img {
+  height: 30px;
+}
+
+.tombol-selesai img {
+  margin-left: 8px;
+}
+
+.divider {
+  background-color: black;
+  min-height: 100vh;
+  width: 4px;
+}
+
+.pengembang {
+  padding: 30px 20px;
+  width: 960px;
+}
+
+.background {
+  background-color: rgba(255, 255, 255, 0.75);
+  width: 100%;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 30px 30px;
+  box-sizing: border-box;
+}
+
+.title {
+  margin-bottom: 20px;
+}
+
+.container-pengembang {
+  display: flex;
+  flex-direction: row;
+}
+
+.left {
+  margin: 0 22px;
+}
+
+.center {
+  margin: 0 22px;
+}
+
+.right {
+  margin: 0 22px;
+}

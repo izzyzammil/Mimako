@@ -1,0 +1,172 @@
+@font-face {
+  font-family: "Nunito";
+  src: url("assets/font/Nunito-Regular.ttf");
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "Nunito", sans-serif;
+}
+
+.image-bg-materi {
+  background-color: white;
+  width: 1020px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-image: url("assets/icons/bg-dashboard.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+.headers {
+  height: 75px;
+  width: 1020px;
+  position: relative;
+  background-color: #000066;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+  justify-content: space-between;
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  padding: 0 50px;
+  box-sizing: border-box;
+}
+
+.headers a {
+  text-decoration: none;
+}
+
+.headers .item-header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.item-header p {
+  color: white;
+  font-size: 24px;
+  padding-left: 10px;
+  font-weight: 700;
+}
+
+.container {
+  padding: 0px 45px 0px 45px;
+  display: flex;
+  flex-direction: column;
+  width: 1020px;
+  height: 582px;
+  box-sizing: border-box;
+}
+
+.judul-bab {
+  display: flex;
+  justify-content: center;
+  height: 180px;
+  margin-top: 70px;
+}
+
+.judul-bab img {
+  position: absolute;
+  height: 180px;
+  -webkit-transition: opacity 0.5s ease-in-out;
+  transition: opacity 0.5s ease-in-out;
+}
+
+.judul-bab img.img-depan:hover {
+  opacity: 0;
+  cursor: pointer;
+}
+
+.sub-bab {
+  display: flex;
+  justify-content: space-evenly;
+  transform: translate(-100px, 0);
+}
+
+.bab-permintaan,
+.bab-struktur {
+  height: 130px;
+  margin-top: 80px;
+}
+
+.bab-penawaran,
+.bab-keseimbangan {
+  height: 130px;
+  margin-top: 160px;
+}
+
+.bab-permintaan img {
+  transform: translate(-66px, 0);
+}
+
+.bab-penawaran img {
+  transform: translate(-32px, 0);
+}
+
+.bab-keseimbangan img {
+  transform: translate(32px, 0);
+}
+
+.bab-struktur img {
+  transform: translate(66px, 0);
+}
+
+.bab-permintaan img,
+.bab-struktur img,
+.bab-penawaran img,
+.bab-keseimbangan img {
+  position: absolute;
+  height: 130px;
+  -webkit-transition: opacity 0.5s ease-in-out;
+  transition: opacity 0.5s ease-in-out;
+}
+
+.bab-permintaan img.img-depan:hover,
+.bab-struktur img.img-depan:hover,
+.bab-penawaran img.img-depan:hover,
+.bab-keseimbangan img.img-depan:hover {
+  opacity: 0;
+  cursor: pointer;
+}
+
+/* Arrows */
+.arrows {
+  display: flex;
+}
+
+.arrow-permintaan img {
+  position: relative;
+  height: 80px;
+  top: -300px;
+  left: 150px;
+}
+
+.arrow-penawaran img {
+  position: relative;
+  height: 80px;
+  transform: rotate(-25deg);
+  top: -255px;
+  left: 220px;
+}
+
+.arrow-keseimbangan img {
+  position: relative;
+  height: 80px;
+  transform: rotate(-75deg);
+  top: -255px;
+  left: 320px;
+}
+
+.arrow-struktur img {
+  position: relative;
+  height: 80px;
+  transform: rotate(-105deg);
+  top: -300px;
+  left: 400px;
+}
