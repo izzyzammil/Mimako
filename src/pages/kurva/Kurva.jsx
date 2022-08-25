@@ -39,13 +39,15 @@ const Kurva = ({
   };
 
   // TODO Rumus kiri, bagian kiri bawah
+  const [qTemp, setQTemp] = useState(0);
+  const [a2Temp, setA2Temp] = useState(0);
   const [qd2, setQd2] = useState(0);
   const [a2, setA2] = useState(0);
   const [b2, setB2] = useState(0);
 
   const onQD2 = (e) => {
     e.preventDefault();
-    setQd2(a2 / b2);
+    setQd2((a2 - qTemp) / b2);
   };
 
   // TODO Rumus kiri, bagian kanan
@@ -75,13 +77,15 @@ const Kurva = ({
   };
 
   // TODO Rumus tengah, bagian kiri bawah
+  const [qStemp, setQsTemp] = useState(0);
+  const [a5Temp, setA5Temp] = useState(0);
   const [qs2, setQs2] = useState(0);
   const [a5, setA5] = useState(0);
   const [b5, setB5] = useState(0);
 
   const onQS2 = (e) => {
     e.preventDefault();
-    return setQs2(a5 / -b5);
+    return setQs2((a5 + qStemp) / -b5);
   };
 
   // TODO Rumus tengah, bagian kanan
@@ -374,7 +378,14 @@ const Kurva = ({
                 Di mana, <strong>Qd = a - b x P</strong>
               </p>
               <div className={styles["label6"]}>
-                <input type="text" name="Qd" defaultValue="Qd" />
+                <input
+                  type="text"
+                  name="Qd"
+                  value={qTemp}
+                  onChange={(e) => {
+                    setQTemp(Number(e.target.value));
+                  }}
+                />
                 <label>=</label>
                 <input
                   type="text"
@@ -411,11 +422,19 @@ const Kurva = ({
                   type="text"
                   name="a2"
                   value={a2}
-                  onChange={(e) => setA2(Number(e.target.value))}
+                  onChange={(e) => setA2(e.target.value)}
                   disabled
                 />
                 <label>-</label>
-                <input type="text" name="Qd" defaultValue="Qd" disabled />
+                <input
+                  type="text"
+                  name="Qd"
+                  value={qTemp}
+                  onChange={(e) => {
+                    setQTemp(Number(e.target.value));
+                  }}
+                  disabled
+                />
               </div>
               <div className={styles["label8"]}>
                 <p>
@@ -424,9 +443,9 @@ const Kurva = ({
                 <label>=</label>
                 <input
                   type="text"
-                  name="a2"
-                  value={a2}
-                  onChange={(e) => setA2(Number(e.target.value))}
+                  name="a2Temp"
+                  value={Number(a2 - qTemp)}
+                  onChange={(e) => setA2Temp(Number(e.target.value))}
                   disabled
                 />
                 <label>/</label>
@@ -615,7 +634,14 @@ const Kurva = ({
                 Di mana, <strong>Qs = -a + b x P</strong>
               </p>
               <div className={styles["label6"]}>
-                <input type="text" name="Qs" defaultValue="Qs" />
+                <input
+                  type="text"
+                  name="Qs"
+                  value={qStemp}
+                  onChange={(e) => {
+                    setQsTemp(Number(e.target.value));
+                  }}
+                />
                 <label>=</label>
                 <input
                   type="text"
@@ -656,7 +682,15 @@ const Kurva = ({
                   disabled
                 />
                 <label>+</label>
-                <input type="text" name="Qs" defaultValue="Qs" disabled />
+                <input
+                  type="text"
+                  name="Qs"
+                  value={qStemp}
+                  onChange={(e) => {
+                    setQsTemp(Number(e.target.value));
+                  }}
+                  disabled
+                />
               </div>
               <div className={styles["label8"]}>
                 <p>
@@ -665,9 +699,9 @@ const Kurva = ({
                 <label>=</label>
                 <input
                   type="text"
-                  name="a5"
-                  value={a5}
-                  onChange={(e) => setA5(Number(e.target.value))}
+                  name="a5Temp"
+                  value={Number(a5 + qStemp)}
+                  onChange={(e) => setA5Temp(Number(e.target.value))}
                   disabled
                 />
                 <label>/</label>
